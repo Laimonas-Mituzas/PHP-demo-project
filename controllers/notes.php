@@ -1,8 +1,15 @@
 <?php
 
+$config = require('config.php');    
 
-$heading = "Notes";
+$db = new Database($config['database']);
 
-echo($_SERVER['REQUEST_URI']    );
+
+$heading = "My Notes";
+
+
+$sql = "SELECT * FROM notes WHERE user_id = 1";
+
+$notes = $db->query($sql)->fetchAll();
 
 require "views/notes.view.php";
