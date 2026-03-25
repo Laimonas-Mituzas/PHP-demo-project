@@ -1,0 +1,11 @@
+# Enable the mod_rewrite module
+RewriteEngine On
+
+# If the requested URL is not a directory...
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ...and if the requested URL is not a file...
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# ...then rewrite all requests to index.php
+RewriteRule ^.*$ index.php [L]
