@@ -10,6 +10,6 @@ $heading = "My Notes";
 
 $sql = "SELECT * FROM notes WHERE user_id = 1";
 
-$notes = $db->query($sql)->fetchAll();
+$notes = $db->query($sql)->get();
 
 require "views/notes.view.php";
