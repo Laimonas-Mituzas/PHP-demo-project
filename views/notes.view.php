@@ -14,23 +14,18 @@
         <li>
           <a href="/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
 
-          <?= $note['body'] ?>
+          <?= htmlspecialchars($note['body']) ?>
+
+           </a>
         </li>
-
-
-          </a>
-          
-               
+              
       <?php endforeach; ?>
 
-      </ul>
+    </ul>
 
       <p class="mt-6">
             <a href="/notes/create" class="text-blue-500 hover:underline">Create Note</a>
-        </p>
-
-
-
+      </p>
 
     </div>
   </main>
