@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<?php require "views/partials/head.php"; ?>
-
-<?php require "views/partials/nav.php"; ?>
+<?php require('partials/head.php') ?>
+<?php require('partials/nav.php') ?>
 
 
 
@@ -13,4 +11,4 @@
   </main>
 
 
-<?php require "views/partials/footer.php"; ?>
+<?php require('partials/footer.php') ?>
