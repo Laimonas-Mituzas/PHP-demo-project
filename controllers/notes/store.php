@@ -4,6 +4,7 @@ use Core\Validator;
 use Core\App;
 use Core\Database;
 
+// dd('Hello');
 $db = App::resolve(Database::class);
 
 $errors = [];
