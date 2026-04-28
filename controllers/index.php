@@ -1,5 +1,5 @@
 <?php
 
 view("index.view.php", [
-    'heading' => 'Laracast php project',
+    'heading' => 'Laracast php notes project',
 ]);
