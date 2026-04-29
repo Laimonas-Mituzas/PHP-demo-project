@@ -43,7 +43,7 @@ if ($user) {
 // If no, create a new user in the database
     $db->query("INSERT INTO users (email, password) VALUES (:email, :password)", [
         'email' => $email,
-        'password' => $password
+        'password' => password_hash($password, PASSWORD_BCRYPT)
     ]); 
 
     // mark that the user is logged in
